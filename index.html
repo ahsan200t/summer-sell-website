@@ -46,8 +46,8 @@
                           </div>
                      
                       <div class="text-center">
-                        <p class="text-xl font-bold">K. Accessories</p>
-                        <p>$ 39.00</p>
+                        <h3 class="text-xl font-bold">K. Accessories</h3>
+                        <span class="text-slate-500">$ 39.00</span>
                         
                       </div>
                     </div>
@@ -66,8 +66,8 @@
                           </div>
                       
                       <div class="text-center">
-                         <p class="text-xl font-bold">G. Accessories</p>
-                         <p>$ 24.00</p>
+                         <h3 class="text-xl font-bold">G. Accessories</h3>
+                         <span class="text-slate-500">$ 24.00</span>
                         
                       </div>
                     </div>
@@ -85,8 +85,8 @@
                           </div>
                      
                       <div class="text-center">
-                        <p class="text-xl font-bold">Dish Cooker</p>
-                        <p>$ 99.00</p>
+                        <h3 class="text-xl font-bold">Dish Cooker</h3>
+                        <span class="text-slate-500">$ 99.00</span>
                         
                       </div>
                     </div>
@@ -108,8 +108,8 @@
                       </div>
                   
                   <div class="text-center">
-                    <p class="text-xl font-bold">Sports Back Cap</p>
-                    <p>$ 49.00</p>
+                    <h3 class="text-xl font-bold">Sports Back Cap</h3>
+                    <span class="text-slate-500">$ 49.00</span>
                     
                   </div>
                 </div>
@@ -127,8 +127,8 @@
                       </div>
                   
                   <div class="text-center">
-                    <p class="text-xl font-bold">Full Jersey Set</p>
-                  <p>$ 69.00</p>
+                    <h3 class="text-xl font-bold">Full Jersey Set</h3>
+                  <span class="text-slate-500">$ 69.00</span>
                     
                   </div>
                 </div>
@@ -146,8 +146,8 @@
                       </div>
                   
                   <div class="text-center">
-                    <p class="text-xl font-bold">Sports cates</p>
-                  <p>$ 149.00</p>
+                    <h3 class="text-xl font-bold">Sports cates</h3>
+                  <span class="text-slate-500">$ 149.00</span>
                    
                   </div>
                 </div>
@@ -168,8 +168,8 @@
                       </div>
                   
                   <div class="text-center">
-                    <p class="text-xl font-bold">Single Relax Chair</p>
-                  <p>$ 185.00</p>
+                    <h3 class="text-xl font-bold">Single Relax Chair</h3>
+                  <span class="text-slate-500">$ 185.00</span>
                     
                   </div>
                 </div>
@@ -187,8 +187,8 @@
                       </div>
                   
                   <div class="text-center">
-                    <p class="text-xl font-bold">Children play</p>
-                  <p>$ 299.00</p>
+                    <h3 class="text-xl font-bold">Children play</h3>
+                  <span class="text-slate-500">$ 299.00</span>
                    
                   </div>
                 </div>
@@ -205,9 +205,9 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                       </div>
                   
-                  <div class="card-actions justify-end">
-                    <p class="text-xl font-bold">Flexible Sofa</p>
-                  <p>$ 399.00</p>
+                  <div class="text-center">
+                    <h3 class="text-xl font-bold">Flexible Sofa</h3>
+                  <span class="text-slate-500">$ 399.00</span>
                     
                   </div>
                 </div>
@@ -220,17 +220,21 @@
         <div class="ml-5">
         <h2 class="mb-5 font-bold opacity-90 pt-5">Have coupon?</h2>
         <div class="flex">
-            <input class="border-2 border-gray-500 border-solid pl-5 rounded-l-xl" type="text" placeholder="Discount">
-        <button class="bg-red-600 p-4 mr-4 rounded-r-xl text-white font-bold">Apply</button>
+            <input id="input-field" class="border-2 border-gray-500 border-solid pl-5 rounded-l-xl" type="text" placeholder="Discount">
+        <button id="btn-apply" class="bg-red-600 p-4 mr-4 rounded-r-xl text-white font-bold">Apply</button>
         </div>
+        
+        </div>
+        <div id="title-container">
 
         </div>
+        
         <!-- calculate-field -->
         <div class="ml-5">
             <hr class="my-20">
-            <p>Total Price: $</p>
-            <p>Discount: $</p>
-            <p>Total: $</p>
+            <p class="text-2xl font-bold">Total Price: $ <span id="total-price"></span></p>
+            <p class="text-2xl font-bold">Discount: $ <span id="discount"></span></p>
+            <p class="text-2xl font-bold">Total: $ <span id="total"></span></p>
             <hr class="my-10">
         <button class="bg-red-600 w-full rounded-lg p-2 text-white font-bold">Make Purchase</button>
         
@@ -239,6 +243,6 @@
         </div>
     </div>
     </main>
-    <script src="script/script.js\"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
