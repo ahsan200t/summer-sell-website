@@ -32,6 +32,7 @@ for (let i = 0; i < cards.length; i++) {
 
             const couponElement = document.getElementById("input-field").value;
             const couponCode = couponElement.split(" ").join("").toUpperCase();
+            
             if (totalPrice >= 200) {
                 if (couponCode === "SELL200") {
                     const discountElement = document.getElementById("discount");
@@ -41,14 +42,16 @@ for (let i = 0; i < cards.length; i++) {
                     const restTotal = document.getElementById("total");
                     restTotal.innerText = totalPrice - discountAmount.toFixed(2);
 
-                    document.getElementById("input-field").value="";
+                    document.getElementById("input-field").value = "";
                 } else {
                     alert("Invalid Coupon");
-                    document.getElementById("input-field").value="";
+
+                    document.getElementById("input-field").value = "";
                 }
             } else {
-                alert("please at least shoping 200 dollar")
-                document.getElementById("input-field").value="";
+                alert("please at least spend 200 dollar")
+
+                document.getElementById("input-field").value = "";
             }
 
 
